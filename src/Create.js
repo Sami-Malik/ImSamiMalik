@@ -13,7 +13,7 @@ function Create() {
     const [project, setProject] = useState("work");
     const [user, setUser] = useState("");
     const [successToggle, setSuccessToggle] = useState(false);
-    const [email, setEmail] = useState("salaarwali.malik@gmail.com");
+    const [email, setEmail] = useState(process.env.REACT_APP_SQ);
     const [wrongUser, setWrongUser] = useState(false);
 
     useEffect(() => {
@@ -83,7 +83,7 @@ function Create() {
     };
     return (
         <div className="create">
-            {user == "salaarwali.malik@gmail.com" ? (
+            {user === process.env.REACT_APP_SQ ? (
                 <form className="form" onSubmit={handleUpload}>
                     <input
                         onChange={(e) => setId(e.target.value)}
@@ -142,6 +142,7 @@ function Create() {
                         <img
                             className="google-icon"
                             src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                            alt="google logo"
                         />
                     </div>
                     <p className="btn-text">
@@ -149,7 +150,7 @@ function Create() {
                     </p>
                 </div>
             )}
-            {user != email && wrongUser ? (
+            {user !== email && wrongUser ? (
                 <h1 className="invalidUser">
                     You're not authorized to access this page.
                 </h1>

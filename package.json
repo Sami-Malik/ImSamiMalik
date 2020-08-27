@@ -20,7 +20,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "Build & Deploy": "npm run build && firebase deploy"
+        "BDeploy": "npm run build && firebase deploy"
     },
     "eslintConfig": {
         "extends": "react-app"

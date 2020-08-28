@@ -58,7 +58,7 @@ function Create() {
                     .getDownloadURL()
                     .then((url) => {
                         db.collection(project).add({
-                            id: id,
+                            id: +id,
                             title: name,
                             imgUrl: url,
                             framework: framework,
@@ -69,7 +69,7 @@ function Create() {
                         }, 1);
                         setTimeout(() => {
                             setSuccessToggle(false);
-                        }, 100);
+                        }, 1500);
                         setImage("");
                         setName("");
                         setLink("");

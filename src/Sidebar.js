@@ -43,7 +43,7 @@ function Sidebar() {
                                 href="https://www.twitter.com/imsamimalik"
                                 rel="noopener noreferrer"
                                 target="_blank"
-                                className="socials"
+                                className="socials twitter"
                             >
                                 <i className="fab fa-twitter"></i>
                             </a>
@@ -53,7 +53,7 @@ function Sidebar() {
                                 href="mailto:salaarwali.malik@gmail.com"
                                 rel="noopener noreferrer"
                                 target="_blank"
-                                className="socials"
+                                className="socials email"
                             >
                                 <i className="fa fa-at"></i>
                             </a>
@@ -63,7 +63,7 @@ function Sidebar() {
                                 href="https://www.linkedin.com/in/sami-malik-4663651a8/"
                                 rel="noopener noreferrer"
                                 target="_blank"
-                                className="socials"
+                                className="socials linkedin"
                             >
                                 <i className="fab fa-linkedin-in"></i>
                             </a>
@@ -73,7 +73,7 @@ function Sidebar() {
                                 href="https://www.instagram.com/imsamimalik/"
                                 rel="noopener noreferrer"
                                 target="_blank"
-                                className="socials"
+                                className="socials instagram"
                             >
                                 <i className="fab fa-instagram"></i>
                             </a>

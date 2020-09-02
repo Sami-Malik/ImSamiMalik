@@ -2,12 +2,7 @@ import React from "react";
 import "./App.css";
 // import Sidebar from "./Sidebar";
 // import Projects from "./Projects";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import Create from "./Create";
 import loadable from "@loadable/component";
 const Sidebar = loadable(() => import("./Sidebar"));

@@ -31,7 +31,7 @@ function Web() {
                         <div className="post_img">
                             <LazyLoad
                                 height={170}
-                                offset={-1}
+                                offset={50}
                                 once={true}
                                 throttle={true}
                                 placeholder={<Placeholder />}

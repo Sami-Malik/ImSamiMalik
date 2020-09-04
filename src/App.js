@@ -16,7 +16,6 @@ function App() {
                 <Switch>
                     <Route exact path="/create">
                         <Create />
-                        {/* testing */}
                     </Route>
                     <Route exact path="/">
                         <Sidebar />

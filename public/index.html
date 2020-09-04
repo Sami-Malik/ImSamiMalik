@@ -6,7 +6,7 @@
         <link rel="icon" href="%PUBLIC_URL%/icon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <script defer src="%PUBLIC_URL%/all.min.js"></script>
+        <script async defer src="%PUBLIC_URL%/all.min.js"></script>
         <meta
             name="description"
             content="Web site created using create-react-app"
@@ -16,6 +16,7 @@
         <title>Sami Malik - Portfolio</title>
     </head>
     <body>
+        <noscript>You need to enable JavaScript to run this app</noscript>
         <div id="loader_container"></div>
         <div id="root"></div>
         <script>
@@ -23,6 +24,16 @@
                 document.querySelector("#loader").remove();
                 document.querySelector("body").classList.add("has-scrollbar");
             });
+        </script>
+        <script>
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker
+                        .register("./serviceworker.js")
+                        .then((reg) => console.log("Success: ", reg.scope))
+                        .catch((err) => console.log("Failure: ", err));
+                });
+            }
         </script>
     </body>
 </html>

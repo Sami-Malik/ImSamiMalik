@@ -11,6 +11,7 @@ function Sidebar() {
                         <a
                             href="https://github.com/sami-malik"
                             rel="noopener noreferrer"
+                            aria-label="Github"
                         >
                             @sami-malik
                         </a>
@@ -23,12 +24,17 @@ function Sidebar() {
                         <a
                             href="https://imsamimalik.web.app/"
                             rel="noopener noreferrer"
+                            aria-label="Web"
                         >
                             imsamimalik.web.app/
                         </a>
                     </span>
                     <span>
-                        <a href="./create" rel="noopener noreferrer">
+                        <a
+                            href="./create"
+                            rel="noopener noreferrer"
+                            aria-label="Map"
+                        >
                             <i className="fas fa-map-marker-alt"></i>
                         </a>
                         &nbsp; Mars
@@ -44,6 +50,7 @@ function Sidebar() {
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className="socials twitter"
+                                aria-label="Twitter"
                             >
                                 <i className="fab fa-twitter"></i>
                             </a>
@@ -54,6 +61,7 @@ function Sidebar() {
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className="socials email"
+                                aria-label="Email"
                             >
                                 <i className="fa fa-at"></i>
                             </a>
@@ -64,6 +72,7 @@ function Sidebar() {
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className="socials linkedin"
+                                aria-label="Linkedin"
                             >
                                 <i className="fab fa-linkedin-in"></i>
                             </a>
@@ -74,6 +83,7 @@ function Sidebar() {
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className="socials instagram"
+                                aria-label="Instagram"
                             >
                                 <i className="fab fa-instagram"></i>
                             </a>

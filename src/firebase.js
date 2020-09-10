@@ -1,4 +1,9 @@
-import firebase from "firebase";
+import firebase from "firebase/app";
+import "firebase/firestore";
+import "firebase/storage";
+import "firebase/auth";
+import "firebase/performance";
+import "firebase/analytics";
 
 const firebaseConfig = {
     apiKey: "AIzaSyDw3t4lPV-2fGFsdW6aW0X56jVMZbPdTQU",
@@ -11,11 +16,14 @@ const firebaseConfig = {
     measurementId: "G-9WE478L9Y1",
 };
 
-var firebaseApp = firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
-const db = firebaseApp.firestore();
+const db = firebase.firestore();
 const storage = firebase.storage();
 const auth = firebase.auth();
 const provider = new firebase.auth.GoogleAuthProvider();
 
-export { db, auth, storage, provider };
+const perf = firebase.performance();
+const analytics = firebase.analytics();
+
+export { db, auth, storage, provider, perf, analytics };

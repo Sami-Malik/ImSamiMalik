@@ -10,13 +10,14 @@
         "react-dom": "^16.13.1",
         "react-lazyload": "^3.0.0",
         "react-router-dom": "^5.2.0",
-        "react-scripts": "3.4.1"
+        "react-scripts": "^3.4.3"
     },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
+        "postbuild": "react-snap",
         "BDeploy": "npm run build && firebase deploy"
     },
     "eslintConfig": {
@@ -36,6 +37,7 @@
     },
     "devDependencies": {
         "@loadable/babel-plugin": "^5.13.0",
-        "@loadable/webpack-plugin": "^5.13.0"
+        "@loadable/webpack-plugin": "^5.13.0",
+        "react-snap": "^1.23.0"
     }
 }

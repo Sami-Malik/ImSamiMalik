@@ -13,7 +13,7 @@ function Create() {
     const [project, setProject] = useState("work");
     const [user, setUser] = useState("");
     const [successToggle, setSuccessToggle] = useState(false);
-    const [email, setEmail] = useState(process.env.REACT_APP_SQ);
+    const [email] = useState(process.env.REACT_APP_SQ);
     const [wrongUser, setWrongUser] = useState(false);
 
     useEffect(() => {

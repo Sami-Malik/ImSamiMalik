@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
     return (
@@ -30,13 +31,13 @@ function Sidebar() {
                         </a>
                     </span>
                     <span>
-                        <a
-                            href="./create"
+                        <Link
+                            to="/create"
                             rel="noopener noreferrer"
                             aria-label="Map"
                         >
                             <i className="fas fa-map-marker-alt"></i>
-                        </a>
+                        </Link>
                         &nbsp; Mars
                     </span>
                     <span>

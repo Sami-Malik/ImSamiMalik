@@ -43,6 +43,20 @@
             "type": "image/png",
             "density": "4.0",
             "purpose": "any"
+        },
+        {
+            "src": "/icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "density": "4.0",
+            "purpose": "any"
+        },
+        {
+            "src": "/icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "density": "4.0",
+            "purpose": "maskable"
         }
     ],
     "start_url": ".",

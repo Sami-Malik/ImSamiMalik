@@ -127,21 +127,7 @@ export const Form = styled.form`
         border-top-right-radius: 0.2rem;
         border-bottom-right-radius: 0.2rem;
     }
-    @-moz-document url-prefix() {
-        .progress[value] {
-            background-color: #eee;
-            border-radius: 0.2rem;
-        }
-        .progress[value]::-moz-progress-bar {
-            background-color: #0074d9;
-            border-top-left-radius: 0.2rem;
-            border-bottom-left-radius: 0.2rem;
-        }
-        .progress[value="100"]::-moz-progress-bar {
-            border-top-right-radius: 0.2rem;
-            border-bottom-right-radius: 0.2rem;
-        }
-    }
+
     .select {
         position: relative;
         display: inline-block;
@@ -194,16 +180,7 @@ export const Form = styled.form`
     .select select::-ms-expand {
         display: none;
     }
-    @-moz-document url-prefix() {
-        .select select {
-            text-indent: 0.01px;
-            text-overflow: "";
-            padding-right: 1rem;
-        }
-        .select option {
-            background-color: #fff;
-        }
-    }
+
     @media screen and (min-width: 0\0) {
         .select select {
             z-index: 1;

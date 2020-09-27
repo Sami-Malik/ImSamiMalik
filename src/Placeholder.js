@@ -8,12 +8,12 @@ function Placeholder() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        fontSize: "30px",
+        fontSize: "calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) )",
         letterSpacing: "10px",
     };
     return (
         <div style={stylesDiv} className="placeholder">
-            <span style={{ filter: "blur(2px)" }}>Loading....</span>
+            <span style={{ filter: "blur(2px)" }}>Loading</span>
         </div>
     );
 }

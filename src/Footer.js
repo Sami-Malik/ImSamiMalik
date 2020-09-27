@@ -1,12 +1,13 @@
 import React from "react";
+import { FooterDiv } from "./AppStyles";
 
 function Footer() {
     return (
-        <div id="footer">
+        <FooterDiv>
             <a href="./" target="_blank" rel="noopener noreferrer">
                 Developed by Sami Malik
             </a>
-        </div>
+        </FooterDiv>
     );
 }
 

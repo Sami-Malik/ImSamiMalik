@@ -1,12 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {
+    Profile,
+    ProfileImg,
+    Username,
+    Userbio,
+    About,
+    Socials,
+} from "./AppStyles";
 
 function Sidebar() {
     return (
         <div className="sidebar">
-            <div id="profile">
-                <div id="profile_img"></div>
-                <div id="username">
+            <Profile>
+                <ProfileImg />
+                <Username>
                     <span>Sami Malik</span>
                     <div>
                         <a
@@ -17,9 +25,9 @@ function Sidebar() {
                             @sami-malik
                         </a>
                     </div>
-                </div>
-                <div id="userbio">FullStack Web Developer</div>
-                <div id="about">
+                </Username>
+                <Userbio>FullStack Web Developer</Userbio>
+                <About>
                     <span>
                         <i className="fas fa-link"></i> &nbsp;
                         <a
@@ -44,7 +52,7 @@ function Sidebar() {
                         <i className="fas fa-user-tie"></i> &nbsp; Available for
                         hire
                     </span>
-                    <div className="socials">
+                    <Socials>
                         <span>
                             <a
                                 href="https://www.twitter.com/imsamimalik"
@@ -89,9 +97,9 @@ function Sidebar() {
                                 <i className="fab fa-instagram"></i>
                             </a>
                         </span>
-                    </div>
-                </div>
-            </div>
+                    </Socials>
+                </About>
+            </Profile>
         </div>
     );
 }

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./Create.css";
+
+import { CreateDiv, Form, GoogleBtn, Alert } from "./CreateStyles";
+
 import { storage, db, auth, provider } from "./firebase";
 
 function Create() {
@@ -82,9 +84,9 @@ function Create() {
         );
     };
     return (
-        <div className="create">
+        <CreateDiv>
             {user === process.env.REACT_APP_SQ ? (
-                <form className="form" onSubmit={handleUpload}>
+                <Form className="form" onSubmit={handleUpload}>
                     <input
                         onChange={(e) => setId(e.target.value)}
                         value={id}
@@ -129,15 +131,15 @@ function Create() {
                             <option value="work">Work</option>
                         </select>
                     </div>
-                    {successToggle && <div class="alert">Item added</div>}
+                    {successToggle && <Alert>Item added</Alert>}
                     <button
                         disabled={!name || !framework || !id || !link || !image}
                     >
                         Submit
                     </button>
-                </form>
+                </Form>
             ) : (
-                <div className="google-btn" onClick={signIn}>
+                <GoogleBtn onClick={signIn}>
                     <div className="google-icon-wrapper">
                         <img
                             className="google-icon"
@@ -148,16 +150,16 @@ function Create() {
                     <p className="btn-text">
                         <b>Sign in with Google</b>
                     </p>
-                </div>
+                </GoogleBtn>
             )}
             {user !== email && wrongUser ? (
-                <h1 className="invalidUser">
+                <h1 className="invalidUser" style={{ marginTop: "60px" }}>
                     You're not authorized to access this page.
                 </h1>
             ) : (
                 ""
             )}
-        </div>
+        </CreateDiv>
     );
 }
 

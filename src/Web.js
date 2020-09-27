@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+
+import { Projects } from "./AppStyles";
+
 import LazyLoad from "react-lazyload";
 import Placeholder from "./Placeholder";
 import { db } from "./firebase";
@@ -19,7 +22,7 @@ function Web() {
     }, []);
 
     return (
-        <div className="projects" id="work_section">
+        <Projects>
             {web.map((item) => (
                 <a
                     href={item.link}
@@ -28,10 +31,10 @@ function Web() {
                     key={item.id}
                 >
                     <section>
-                        <div className="post_img">
+                        <div className="post_img" style={{ height: "170px" }}>
                             <LazyLoad
                                 height={170}
-                                offset={50}
+                                offset={150}
                                 once={true}
                                 throttle={true}
                                 placeholder={<Placeholder />}
@@ -55,7 +58,7 @@ function Web() {
                     </section>
                 </a>
             ))}
-        </div>
+        </Projects>
     );
 }
 

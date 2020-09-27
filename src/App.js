@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import GlobalStyle from "./GlobalStyles";
 // import Sidebar from "./Sidebar";
 // import Projects from "./Projects";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -11,19 +11,22 @@ const Create = loadable(() => import("./Create"));
 
 function App() {
     return (
-        <div className="app">
-            <Router>
-                <Switch>
-                    <Route exact path="/create">
-                        <Create />
-                    </Route>
-                    <Route exact path="/">
-                        <Sidebar />
-                        <Projects />
-                    </Route>
-                </Switch>
-            </Router>
-        </div>
+        <>
+            <GlobalStyle />
+            <div className="app">
+                <Router>
+                    <Switch>
+                        <Route exact path="/create">
+                            <Create />
+                        </Route>
+                        <Route exact path="/">
+                            <Sidebar />
+                            <Projects />
+                        </Route>
+                    </Switch>
+                </Router>
+            </div>
+        </>
     );
 }
 

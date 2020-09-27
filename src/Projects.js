@@ -1,4 +1,7 @@
 import React from "react";
+
+import { Display, WorkDiv } from "./AppStyles";
+
 import loadable from "@loadable/component";
 // import Work from "./Work";
 // import Footer from "./Footer";
@@ -9,17 +12,17 @@ const Web = loadable(() => import("./Web"));
 
 function Projects() {
     return (
-        <div id="display">
-            <div id="work" key="1">
+        <Display>
+            <WorkDiv key="1">
                 <h1>Work.</h1>
                 <Work />
-            </div>
-            <div id="work" key="2">
+            </WorkDiv>
+            <WorkDiv key="2">
                 <h1>Web.</h1>
                 <Web />
-            </div>
+            </WorkDiv>
             <Footer />
-        </div>
+        </Display>
     );
 }
 

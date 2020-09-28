@@ -5,17 +5,21 @@ export const CreateDiv = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100vw;
 `;
 export const Form = styled.form`
     display: flex;
     align-items: center;
     justify-items: center;
     flex-direction: column;
-    width: 460px;
     height: auto;
+    transform: scale(0.95);
     background-color: #4caf50;
     padding: 40px 20px;
     border-radius: 5px;
+    @media (max-width: 990px) {
+        transform: scale(0.75);
+    }
     button,
     input,
     progress {
@@ -216,6 +220,9 @@ export const GoogleBtn = styled.div`
     border-radius: 2px;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
     transform: scale(2);
+    @media (max-width: 990px) {
+        transform: scale(1.5);
+    }
     &:hover {
         box-shadow: 0 0 6px #0060ff;
     }

@@ -184,6 +184,7 @@ export const Projects = styled.div`
     }
     .post_img img {
         width: 100%;
+        height: 170px;
     }
     .section_title {
         font-size: 24px;

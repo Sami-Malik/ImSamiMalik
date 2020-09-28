@@ -29,7 +29,7 @@ function Create() {
             .then((result) => {
                 console.log(result);
                 setUser(result.user.email);
-                if (user != process.env.REACT_APP_SQ) {
+                if (user !== process.env.REACT_APP_SQ) {
                     setXDialog(true);
                 }
                 setWrongUser(true);

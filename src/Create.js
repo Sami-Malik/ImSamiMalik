@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from "react";
 
-import { CreateDiv, Form, GoogleBtn, Alert, AdminPopup } from "./CreateStyles";
+import {
+    CreateDiv,
+    Form,
+    GoogleBtn,
+    Alert,
+    AdminPopup,
+    Button,
+} from "./CreateStyles";
 
 import { storage, db, auth, provider } from "./firebase";
+import { Link } from "react-router-dom";
 
 function Create() {
     const [name, setName] = useState("");
@@ -208,6 +216,15 @@ function Create() {
             ) : (
                 ""
             )}
+            <Link to="/" rel="noopener noreferrer" aria-label="Back">
+                <Button>
+                    <img
+                        src="https://img.icons8.com/cotton/344/circled-left--v2.png"
+                        alt="Back"
+                    />
+                    {/* https://www.flaticon.com/svg/static/icons/svg/93/93634.svg */}
+                </Button>
+            </Link>
         </CreateDiv>
     );
 }

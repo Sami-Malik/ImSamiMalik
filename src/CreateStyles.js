@@ -328,3 +328,28 @@ export const AdminPopup = styled.div`
         }
     }
 `;
+export const Button = styled.span`
+    position: fixed;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 50px;
+        height: 50px;
+    }
+    &:hover img {
+        filter: invert(1);
+    }
+    @media (max-width: 990px) {
+        top: 0px;
+        left: 0px;
+        transform: translate(-15px, -15px) scale(0.5);
+    }
+`;

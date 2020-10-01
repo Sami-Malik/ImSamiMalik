@@ -7,6 +7,7 @@ import {
     Alert,
     AdminPopup,
     Button,
+    FormContainer,
 } from "./CreateStyles";
 
 import { storage, db, auth, provider } from "./firebase";
@@ -132,68 +133,74 @@ function Create() {
                             alt="imsamimalik"
                         />
                     </AdminPopup>
-                    <Form className="form" onSubmit={handleUpload}>
-                        <input
-                            onChange={(e) => setId(e.target.value)}
-                            value={id}
-                            type="number"
-                            min="0"
-                            max="1000"
-                            placeholder="Enter id"
-                            required
-                        />
-                        <input
-                            onChange={(e) => setName(e.target.value)}
-                            value={name}
-                            type="text"
-                            placeholder="Enter title"
-                            required
-                        />
-                        <input
-                            onChange={(e) => setFramework(e.target.value)}
-                            value={framework}
-                            type="text"
-                            placeholder="Enter framework"
-                            required
-                        />
-                        <input
-                            onChange={(e) => setLink(e.target.value)}
-                            value={link}
-                            type="text"
-                            placeholder="Enter link"
-                            required
-                        />
-                        <label className="file">
+                    <FormContainer>
+                        <Form className="form" onSubmit={handleUpload}>
                             <input
-                                onChange={handleChange}
-                                type="file"
+                                onChange={(e) => setId(e.target.value)}
+                                value={id}
+                                type="number"
+                                min="0"
+                                max="1000"
+                                placeholder="Enter id"
                                 required
                             />
-                            <span className="file-custom">{filename}</span>
-                        </label>
-                        <progress
-                            className="progress"
-                            value={progress}
-                            max="100"
-                        />
-                        <div className="select">
-                            <select
-                                value={project}
-                                onChange={(e) => setProject(e.target.value)}
+                            <input
+                                onChange={(e) => setName(e.target.value)}
+                                value={name}
+                                type="text"
+                                placeholder="Enter title"
+                                required
+                            />
+                            <input
+                                onChange={(e) => setFramework(e.target.value)}
+                                value={framework}
+                                type="text"
+                                placeholder="Enter framework"
+                                required
+                            />
+                            <input
+                                onChange={(e) => setLink(e.target.value)}
+                                value={link}
+                                type="text"
+                                placeholder="Enter link"
+                                required
+                            />
+                            <label className="file">
+                                <input
+                                    onChange={handleChange}
+                                    type="file"
+                                    required
+                                />
+                                <span className="file-custom">{filename}</span>
+                            </label>
+                            <progress
+                                className="progress"
+                                value={progress}
+                                max="100"
+                            />
+                            <div className="select">
+                                <select
+                                    value={project}
+                                    onChange={(e) => setProject(e.target.value)}
+                                >
+                                    <option value="web">Web</option>
+                                    <option value="work">Work</option>
+                                </select>
+                            </div>
+                            {successToggle && <Alert>Item added</Alert>}
+                            <button
+                                disabled={
+                                    !name ||
+                                    !framework ||
+                                    !id ||
+                                    !link ||
+                                    !image
+                                }
                             >
-                                <option value="web">Web</option>
-                                <option value="work">Work</option>
-                            </select>
-                        </div>
-                        {successToggle && <Alert>Item added</Alert>}
-                        <button
-                            disabled={
-                                !name || !framework || !id || !link || !image
-                            }
-                        >
-                            Submit
-                        </button>
-                    </Form>
+                                Submit
+                            </button>
+                        </Form>
+                    </FormContainer>
                 </>
             ) : (
                 <GoogleBtn onClick={signIn}>

@@ -7,6 +7,11 @@ export const CreateDiv = styled.div`
     flex-direction: column;
     width: 100vw;
 `;
+export const FormContainer = styled.span`
+    height: 100vh;
+    display: grid;
+    place-items: center;
+`;
 export const Form = styled.form`
     display: flex;
     align-items: center;

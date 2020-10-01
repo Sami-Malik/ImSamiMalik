@@ -159,6 +159,7 @@ export const Projects = styled.div`
     flex-wrap: wrap;
     a {
         width: calc(49% - 30px);
+        max-width: 405px;
         display: flex;
         text-decoration: none;
     }

@@ -1,6 +1,6 @@
 ## Hey 👋, I'm Sami
 
-<a href="https://www.linkedin.com/in/sami-malik-4663651a8" >
+<a href="https://www.linkedin.com/in/imsamimalik" >
   <img align="left" alt="Sami's LinkdeIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
 </a>
 <a href="https://twitter.com/imsamimalik">

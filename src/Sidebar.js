@@ -18,7 +18,7 @@ function Sidebar() {
                     <span>Sami Malik</span>
                     <div>
                         <a
-                            href="https://github.com/sami-malik"
+                            href="https://github.com/imsamimalik"
                             rel="noopener noreferrer"
                             aria-label="Github"
                         >
@@ -46,7 +46,7 @@ function Sidebar() {
                         >
                             <i className="fas fa-map-marker-alt"></i>
                         </Link>
-                        &nbsp; Mars
+                        &nbsp;&nbsp; Mars
                     </span>
                     <span>
                         <i className="fas fa-user-tie"></i> &nbsp; Available for
@@ -77,7 +77,7 @@ function Sidebar() {
                         </span>
                         <span>
                             <a
-                                href="https://www.linkedin.com/in/sami-malik-4663651a8/"
+                                href="https://www.linkedin.com/in/imsamimalik"
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className="socials linkedin"

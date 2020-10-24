@@ -9,7 +9,7 @@
 <a href="https://www.instagram.com/imsamimalik/">
   <img align="left" alt="Sami's Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />
 </a>
-<a href="https://www.facebook.com/samimalikk">
+<a href="https://www.facebook.com/imsamimalik">
   <img align="left" alt="Sami's FB" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/facebook.svg" />
 </a>
 
